@@ -3,9 +3,10 @@ const axios = require('axios');
 const { GeneralError } = require('../../utils/errors');
 
 
-const baseUrl = process.env.REACT_APP_URL_API;
-const apiKey = process.env.REACT_APP_API_KEY;
-
+//const baseUrl = process.env.REACT_APP_URL_API;
+//const apiKey = process.env.REACT_APP_API_KEY;
+const baseUrl = 'https://api.thecatapi.com/v1';
+const apiKey = 'live_b47XkmLSRK49cWz09suOEY90N0B8XMFaRJayqWu3Xi7FCqGtOtDFCAlyTRIkN55i';
 
 router.get('/breeds', async (req, res, next) => {
 	try {
